@@ -39,8 +39,6 @@ def check_cycle(matrix: list[list[str]], y: int, x: int):
     next = [(-1, 0), (0, 1), (1, 0), (0, -1)]
     dir = 0
     while moves <= len(matrix) * len(matrix[0]) * 4:
-        # if matrix[y][x] != "#":
-        #     matrix[y][x] = "X"
         moves += 1
         dy, dx = next[dir]
         next_y, next_x = y + dy, x + dx

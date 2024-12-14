@@ -6,8 +6,6 @@ def setup(input_val, width, height):
     velocities = {input_val.index(b) + 1: (b[1][1], b[1][0]) for b in input_val}
     pos_init = {input_val.index(b) + 1: (b[0][1], b[0][0]) for b in input_val}
     pos = create_empty_grid(width, height)
-    # print(pos_init)
-    # print(velocities)
     for robot_id, (y, x) in pos_init.items():
         pos[y][x].append(robot_id)
     return pos, velocities
