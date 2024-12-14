@@ -63,7 +63,6 @@ while True:
     active_positions = {
         (y, x) for y in range(height) for x in range(width) if pos[y][x]
     }
-    print(k)
     k += 1
     if len(active_positions) == len(input_val):
         break
